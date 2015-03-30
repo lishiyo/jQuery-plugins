@@ -1,0 +1,3 @@
+TEST
+
+App Academy Plugins
