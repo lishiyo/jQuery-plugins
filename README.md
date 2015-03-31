@@ -43,9 +43,11 @@ git pull --rebase <remote> // rebase to avoid merge commits
 # MERGING
 While you can use either fast-forward or three-way merge, many developers like to use fast-forward merges (facilitated through rebasing) for small features or bug fixes, while reserving 3-way merges for the integration of longer-running features.
 - If the feature is short, rebase onto master and fast-forward merge. If your feature takes a long time to develop, use three-way.
+
 Merge Conflicts:
 - git status  // check 'both modified'
-- git add -A // after done fixing conflicts
+- git add <some-file> // after done fixing conflicts
+- git rebase --continue // if doing a rebase, or rebase --abort
 - git commit -m "merge commit"
 - git branch -d feature-branch
 
