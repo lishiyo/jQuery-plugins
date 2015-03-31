@@ -13,6 +13,9 @@ git revert <commit> - doesn't change project history, undo by adding new commit
 # RESET = DANGEROUS UNDO
 git reset <commit></commit> - resets staging area to most recent or specific commit, but working directory remains same
 git reset --hard <commit> - resets both staging area AND working directory
+reset ONLY affects tracked files. To remove untracked files:
+git clean -n // shows you which files will be removed
+git clean -f // removes untracked files in current directory (use -df to remove directors as well)
 
 # TO MERGE A DETACHED HEAD COMMIT:
 git checkout -b temp
