@@ -17,3 +17,5 @@ git diff origin/master temp
 // update master branch to point to temp
 git checkout -B master temp
 git branch -d temp
+
+DELETE THIS LINE
