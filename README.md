@@ -2,12 +2,17 @@ TEST
 
 App Academy Plugins
 
-to retain commits, you need to create a new branch
+git tag
+	See: http://gitimmersion.com/lab_13.html
 =======
-Detached head - tag v1-beta
-See: http://gitimmersion.com/lab_13.html
 
+
+# REVERT = SAFE UNDO
 git revert <commit> - doesn't change project history, undo by adding new commit
+
+# RESET = DANGEROUS UNDO
+git reset <commit></commit> - resets staging area to most recent or specific commit, but working directory remains same
+git reset --hard <commit> - resets both staging area AND working directory
 
 # TO MERGE A DETACHED HEAD COMMIT:
 git checkout -b temp
