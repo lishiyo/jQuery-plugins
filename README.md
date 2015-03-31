@@ -40,10 +40,10 @@ git merge origin/master
 
 git pull --rebase <remote> // rebase to avoid merge commits
 
-COMMON WORKFLOW
+COMMON WORKFLOW - only push to bare repos!
 ============
 git checkout master
 git fetch origin master
-git rebase -i origin/master
-# Squash commits, fix up commit messages etc.
+git rebase -i origin/master // move my branch on top of origin/master
+// Squash commits, fix up commit messages etc.
 git push origin master
