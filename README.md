@@ -25,10 +25,13 @@ git reset --hard <commit> - resets both staging area AND working directory
 # REWRITING HISTORY - NOT FOR PUBLIC REPOS
 git commit --amend --no-edit // adds current staged files to last commit
 
-REBASE- move a branch to a new base commit to maintain linear history, common for integrating upstream changes into local repo
+REBASE - move a branch to a new base commit to maintain linear history, common for integrating upstream changes into local repo
 git checkout feature-branch
 git rebase master
 git checkout master
 git merge feature-branch
 // use "git rebase -i master" to clean up commits before rebasing
 // use squash to squash old onto new
+
+# SYNCING
+git fetch <remote> // fetches all branches from repo as remote branches
