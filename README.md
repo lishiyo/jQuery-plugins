@@ -47,3 +47,12 @@ git fetch origin master
 git rebase -i origin/master // move my branch on top of origin/master
 // Squash commits, fix up commit messages etc.
 git push origin master
+
+# PULL Requests
+Fork central public repo and clone onto your local 
+git checkout -b some-feature
+# Edit some code
+git commit -am "Add first draft of some feature"
+git push origin some-branch // push to your public repo
+Create a pull request by going to your public repo and clicking "Pull Request"
+- Mary wants to merge her feature into the main codebase, so the source branch is her feature branch, the destination repository is John’s public repository, and the destination branch is master. 
