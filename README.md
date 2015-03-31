@@ -22,8 +22,13 @@ git revert <commit> - doesn't change project history, undo by adding new commit
 git reset <commit></commit> - resets staging area to most recent or specific commit, but working directory remains same
 git reset --hard <commit> - resets both staging area AND working directory
 
-# REWRITING HISTORY
-// NOT FOR PUBLIC REPOS
+# REWRITING HISTORY - NOT FOR PUBLIC REPOS
 git commit --amend --no-edit // adds current staged files to last commit
 
-git rebase - move a branch to a new base commit to maintain linear history, common for integrating upstream changes into local repo
+REBASE- move a branch to a new base commit to maintain linear history, common for integrating upstream changes into local repo
+git checkout feature-branch
+git rebase master
+git checkout master
+git merge feature-branch
+// use "git rebase -i master" to clean up commits before rebasing
+// use squash to squash old onto new
