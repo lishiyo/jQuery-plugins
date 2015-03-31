@@ -35,3 +35,15 @@ git merge feature-branch
 
 # SYNCING
 git fetch <remote> // fetches all branches from repo as remote branches
+git log --oneline origin/master
+git merge origin/master
+
+git pull --rebase <remote> // rebase to avoid merge commits
+
+COMMON WORKFLOW
+============
+git checkout master
+git fetch origin master
+git rebase -i origin/master
+# Squash commits, fix up commit messages etc.
+git push origin master
